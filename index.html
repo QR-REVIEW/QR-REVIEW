@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Review Workflow</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f9fafb;
+            color: #111827;
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #111827;
+        }
+
+        p {
+            color: #4b5563;
+            margin-bottom: 2rem;
+        }
+
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .step-card {
+            display: block;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .step-card:hover {
+            border-color: #d1d5db;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: baseline;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-number {
+            background-color: #f3f4f6;
+            color: #374151;
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+        }
+
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .step-url {
+            color: #2563eb;
+            font-size: 0.875rem;
+        }
+        
+        .step-url:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Review Workflow</h1>
+        <p>Complete setup process from generation to activation.</p>
+
+        <div class="step-list">
+            <a href="https://qr-review.github.io/random-qrs-generation/" class="step-card">
+                <div class="step-header">
+                    <span class="step-number">Step 1</span>
+                    <h2 class="step-title">Random QR Generators</h2>
+                </div>
+                <div class="step-url">https://qr-review.github.io/random-qrs-generation/</div>
+            </a>
+
+            <a href="https://pdf-qrs-placer.vercel.app/" class="step-card">
+                <div class="step-header">
+                    <span class="step-number">Step 2</span>
+                    <h2 class="step-title">PDF QR Placement</h2>
+                </div>
+                <div class="step-url">https://pdf-qrs-placer.vercel.app/</div>
+            </a>
+
+            <a href="https://qr-review.github.io/qr-nfc-writer/" class="step-card">
+                <div class="step-header">
+                    <span class="step-number">Step 3</span>
+                    <h2 class="step-title">NFC Writing</h2>
+                </div>
+                <div class="step-url">https://qr-review.github.io/qr-nfc-writer/</div>
+            </a>
+
+            <a href="https://qr-review.github.io/review-card-activation/" class="step-card">
+                <div class="step-header">
+                    <span class="step-number">Step 4</span>
+                    <h2 class="step-title">Card Activation & Selling</h2>
+                </div>
+                <div class="step-url">https://qr-review.github.io/review-card-activation/</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
